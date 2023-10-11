@@ -1,10 +1,9 @@
-import { Avatar, Box, Container, Divider, Fade, Grow, Stack, Typography } from '@mui/material';
+import { Avatar, Box, Container, Divider, Fade, Stack, Typography } from '@mui/material';
+import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 import { Card, Title } from '../../components';
 import { METODOLOGIE } from '../../constants/landing';
 import { NAVBAR_PAGES } from '../../constants/navbar';
-import Image from '../../assets/landing/stats.jpg';
-import { motion } from 'framer-motion';
 
 const Metodologie = () => {
     // ---------- choose

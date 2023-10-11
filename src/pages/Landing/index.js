@@ -6,6 +6,7 @@ import Header from './Header';
 import Stats from './Stats';
 import AboutUs from './AboutUs';
 import Metodologie from './Metodologie';
+import Team from './Team';
 
 const Landing = () => {
     const { hash } = useLocation();
@@ -38,6 +39,7 @@ const Landing = () => {
                 <Activities />
                 <Stats />
                 <Metodologie />
+                <Team />
             </Stack>
         </>
     );

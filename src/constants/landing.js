@@ -15,6 +15,24 @@ import CO_DEFINITION from '../assets/landing/methodologie/co-definition.jpg';
 import CONSTITUTION_D_EQUIPES from '../assets/landing/methodologie/constitution-d-equipes.jpg';
 import CO_CONSTRUCTION from '../assets/landing/methodologie/co-construction.jpg';
 import PERENNISATION from '../assets/landing/methodologie/perennisation.jpg';
+// ---
+import Member01 from '../assets/landing/team/01.jpg';
+import Member02 from '../assets/landing/team/02.jpg';
+import Member03 from '../assets/landing/team/03.jpeg';
+import Member04 from '../assets/landing/team/04.jpeg';
+import Member05 from '../assets/landing/team/05.jpg';
+import Member06 from '../assets/landing/team/06.jpg';
+import Member07 from '../assets/landing/team/07.jpg';
+import Member08 from '../assets/landing/team/08.jpg';
+import Member09 from '../assets/landing/team/09.jpg';
+import Member10 from '../assets/landing/team/10.jpg';
+import Member11 from '../assets/landing/team/11.jpg';
+import Member12 from '../assets/landing/team/12.jpg';
+import Member13 from '../assets/landing/team/13.jpeg';
+import Member14 from '../assets/landing/team/14.jpeg';
+import Member15 from '../assets/landing/team/15.jpeg';
+import Member16 from '../assets/landing/team/16.jpeg';
+import Member17 from '../assets/landing/team/17.jpeg';
 
 export const ACTIVITIES = [
     {
@@ -93,4 +111,24 @@ export const METODOLOGIE = [
         icon: <BsRocketTakeoffFill />,
         image: PERENNISATION,
     },
+];
+
+export const TEAM = [
+    { image: Member01, name: 'Dr Bouchra RAHMOUNI', title: 'Head of SIL' },
+    { image: Member02, name: 'Hanane DRIOUICH', title: 'Senior Manager SIL' },
+    { image: Member03, name: 'Abdeljalil ELMKADMI', title: 'Senior Manager Cooplab' },
+    { image: Member04, name: 'Rabha BARJIT', title: 'Knowledge Manager' },
+    { image: Member05, name: 'Youssef ELASAAD', title: 'Cooperative Development Project Manager' },
+    { image: Member06, name: 'Hiba SEDOUANE', title: 'Project Manager Social Innovation' },
+    { image: Member07, name: 'Mariam OUFKIRI', title: 'Finance Project Manager & Coordination' },
+    { image: Member08, name: 'Chaimae EZZAHIRI', title: 'Cooperative Development Specialist' },
+    { image: Member09, name: 'Hassan AANGRI', title: 'Project coordinator' },
+    { image: Member10, name: 'Fatima zahra REHALI', title: 'Cooperative Development Project Manager' },
+    { image: Member11, name: 'El Mehdi MALLAH', title: 'Digital Developer' },
+    { image: Member12, name: 'Loubna JOUNDOULI', title: 'Cooperative Development Specialist' },
+    { image: Member13, name: 'Safae ASSIMI', title: 'Front Desk & Orientation Officer' },
+    { image: Member14, name: 'Ismail BELLAKRIDI', title: 'Social Intelligence Manager' },
+    { image: Member15, name: 'Sarra SABER', title: 'Social Entrepreneurship Engineer' },
+    { image: Member16, name: 'Zakaria BELATTAR', title: 'Graphic Designer' },
+    { image: Member17, name: 'Eric KADIO', title: 'Researcher' },
 ];
