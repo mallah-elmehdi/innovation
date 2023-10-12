@@ -1,8 +1,7 @@
 import { Avatar, Stack } from '@mui/material';
 import React from 'react';
-import { FaFacebook, FaFacebookF, FaInstagram, FaInstagramSquare, FaLinkedinIn } from 'react-icons/fa';
-import { SOCIALS } from '../../constants/socials';
 import { Link } from '..';
+import { SOCIALS } from '../../constants/socials';
 
 const Socials = () => {
     return (
