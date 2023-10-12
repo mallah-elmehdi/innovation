@@ -4,6 +4,7 @@ import { Outlet, useLocation } from 'react-router-dom';
 import { PAGES } from '../../constants/pages';
 import { useScrollToTop } from '../../hooks';
 import usePageTitle from '../../hooks/usePageTitle';
+import { Socials } from '../../components';
 
 const Base = () => {
     // ========== VARIABLES
@@ -36,8 +37,10 @@ const Base = () => {
                 minWidth: '100vw',
                 height: '100%',
                 width: '100%',
+                position: 'relative',
             })}
         >
+            <Socials />
             <Outlet />
         </Box>
     );

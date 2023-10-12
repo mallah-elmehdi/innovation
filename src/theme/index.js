@@ -87,6 +87,10 @@ theme.gradient = {
         theme.palette.primary.dark,
         0.4
     )} 100%)`,
+    secondaryDarkAlpha: `linear-gradient(90deg, ${alpha(theme.palette.secondary.dark, 0.9)} 0%, ${alpha(
+        theme.palette.secondary.dark,
+        0.4
+    )} 100%)`,
     secondaryAlpha: `linear-gradient(45deg, ${alpha(theme.palette.primary.main, 0.5)} 0%, ${alpha(
         theme.palette.secondary.main,
         0.5

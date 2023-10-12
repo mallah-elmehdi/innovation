@@ -10,7 +10,9 @@ export { default as Card } from './Card';
 export { default as Footer } from './Footer';
 export { default as IconCardLight } from './IconCardLight';
 export { default as NavbarIn } from './NavbarIn';
+export { default as Socials } from './Socials';
 
 // -----
 export { default as ActivityCard } from './ActivityCard';
 export { default as NewsCard } from './NewsCard';
+export { default as TestimonialCard } from './TestimonialCard';

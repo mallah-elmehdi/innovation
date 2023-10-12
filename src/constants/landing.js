@@ -33,6 +33,36 @@ import Member14 from '../assets/landing/team/14.jpeg';
 import Member15 from '../assets/landing/team/15.jpeg';
 import Member16 from '../assets/landing/team/16.jpeg';
 import Member17 from '../assets/landing/team/17.jpeg';
+// ---
+import Partenaire01 from '../assets/landing/partenaire/1.jpg';
+import Partenaire02 from '../assets/landing/partenaire/2.jpg';
+import Partenaire03 from '../assets/landing/partenaire/3.jpg';
+import Partenaire04 from '../assets/landing/partenaire/4.jpg';
+import Partenaire05 from '../assets/landing/partenaire/5.jpg';
+import Partenaire06 from '../assets/landing/partenaire/6.jpg';
+import Partenaire07 from '../assets/landing/partenaire/7.jpg';
+import Partenaire08 from '../assets/landing/partenaire/8.jpg';
+import Partenaire09 from '../assets/landing/partenaire/9.jpg';
+import Partenaire10 from '../assets/landing/partenaire/10.jpg';
+import Partenaire11 from '../assets/landing/partenaire/11.jpg';
+import Partenaire12 from '../assets/landing/partenaire/12.jpg';
+import Partenaire13 from '../assets/landing/partenaire/13.jpg';
+import Partenaire14 from '../assets/landing/partenaire/14.jpg';
+import Partenaire15 from '../assets/landing/partenaire/15.jpg';
+import Partenaire16 from '../assets/landing/partenaire/16.jpg';
+import Partenaire17 from '../assets/landing/partenaire/17.jpg';
+import Partenaire18 from '../assets/landing/partenaire/18.jpg';
+import Partenaire19 from '../assets/landing/partenaire/19.jpg';
+import Partenaire20 from '../assets/landing/partenaire/20.jpg';
+import Partenaire21 from '../assets/landing/partenaire/21.jpg';
+import Partenaire22 from '../assets/landing/partenaire/22.jpg';
+import Partenaire23 from '../assets/landing/partenaire/23.jpg';
+import Partenaire24 from '../assets/landing/partenaire/24.jpg';
+import Partenaire25 from '../assets/landing/partenaire/25.jpg';
+import Partenaire27 from '../assets/landing/partenaire/27.jpg';
+import Partenaire28 from '../assets/landing/partenaire/28.jpg';
+import Partenaire29 from '../assets/landing/partenaire/29.jpg';
+import Partenaire30 from '../assets/landing/partenaire/30.jpg';
 
 export const ACTIVITIES = [
     {
@@ -131,4 +161,60 @@ export const TEAM = [
     { image: Member15, name: 'Sarra SABER', title: 'Social Entrepreneurship Engineer' },
     { image: Member16, name: 'Zakaria BELATTAR', title: 'Graphic Designer' },
     { image: Member17, name: 'Eric KADIO', title: 'Researcher' },
+];
+
+export const PARTENAIRES = [
+    Partenaire01,
+    Partenaire02,
+    Partenaire03,
+    Partenaire04,
+    Partenaire05,
+    Partenaire06,
+    Partenaire07,
+    Partenaire08,
+    Partenaire09,
+    Partenaire10,
+    Partenaire11,
+    Partenaire12,
+    Partenaire13,
+    Partenaire14,
+    Partenaire15,
+    Partenaire16,
+    Partenaire17,
+    Partenaire18,
+    Partenaire19,
+    Partenaire20,
+    Partenaire21,
+    Partenaire22,
+    Partenaire23,
+    Partenaire24,
+    Partenaire25,
+    Partenaire27,
+    Partenaire28,
+    Partenaire29,
+    Partenaire30,
+];
+
+export const TESTIMONIAL = [
+    {
+        name: 'el mehdi mallah',
+        title: 'digital developer',
+        comment:
+            'Situation admitting promotion at or to perceived be. Mr acuteness we as estimable enjoyment up. An held late as felt know.',
+        image: Member11,
+    },
+    {
+        name: 'el mehdi mallah',
+        title: 'digital developer',
+        comment:
+            'Situation admitting promotion at or to perceived be. Mr acuteness we as estimable enjoyment up. An held late as felt know.',
+        image: Member11,
+    },
+    {
+        name: 'el mehdi mallah',
+        title: 'digital developer',
+        comment:
+            'Situation admitting promotion at or to perceived be. Mr acuteness we as estimable enjoyment up. An held late as felt know.',
+        image: Member11,
+    },
 ];

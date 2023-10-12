@@ -1,12 +1,14 @@
 import { Stack } from '@mui/material';
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import AboutUs from './AboutUs';
 import Activities from './Activities';
 import Header from './Header';
-import Stats from './Stats';
-import AboutUs from './AboutUs';
 import Metodologie from './Metodologie';
+import Partenaires from './Partenaires';
+import Stats from './Stats';
 import Team from './Team';
+import { Footer } from '../../components';
 
 const Landing = () => {
     const { hash } = useLocation();
@@ -40,6 +42,8 @@ const Landing = () => {
                 <Stats />
                 <Metodologie />
                 <Team />
+                <Partenaires />
+                <Footer />
             </Stack>
         </>
     );
