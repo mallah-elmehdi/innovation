@@ -4,19 +4,19 @@ export const NAVBAR_PAGES = [
         id: 'actualites-et-annonces',
     },
     {
-        title: 'À propos de SIL',
-        id: 'a-propos-de-sil',
+        title: 'Vision et Mission',
+        id: 'vision-et-Mission',
     },
     {
-        title: 'Nos activités',
-        id: 'nos-activites',
+        title: 'Activités',
+        id: 'activites',
     },
     {
         title: 'SIL en chiffre',
         id: 'le-sil-en-chiffre',
     },
     {
-        title: 'Notre méthodologie',
+        title: 'Méthodologie',
         id: 'notre-methodologie',
     },
     {

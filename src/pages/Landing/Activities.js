@@ -18,10 +18,10 @@ const Activities = () => {
             }}
         >
             <Container sx={{ alignSelf: 'center' }}>
-                <Title>{NAVBAR_PAGES[2].title}</Title>
-                <Grid container spacing={5} justifyContent="center">
+                <Title>Nos Activités</Title>
+                <Grid container spacing={6} mt={3} justifyContent="center">
                     {ACTIVITIES.map((item) => (
-                        <Grid item md={4} xs={12}>
+                        <Grid item sm={5} xs={11}>
                             <ActivityCard {...item} />
                         </Grid>
                     ))}

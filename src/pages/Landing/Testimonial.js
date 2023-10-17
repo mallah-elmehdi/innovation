@@ -1,11 +1,38 @@
-import { Box, Container, Grid, Stack, Typography } from '@mui/material';
+import { Box, Container, Stack, Typography } from '@mui/material';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+import OwlCarousel from 'react-owl-carousel';
 import React from 'react';
+import Bg from '../../assets/background/squares.png';
 import { TestimonialCard, Title } from '../../components';
 import { TESTIMONIAL } from '../../constants/landing';
 import { NAVBAR_PAGES } from '../../constants/navbar';
-import Bg from '../../assets/background/squares.png';
+import '../../css/testimonial.css';
 
 const Testimonial = () => {
+    // --- carosselle
+    const options = {
+        loop: true,
+        center: true,
+        items: 3,
+        margin: 0,
+        autoplay: true,
+        dots: true,
+        autoplayTimeout: 10000,
+        smartSpeed: 450,
+        // nav: false,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 1,
+            },
+            1000: {
+                items: 3,
+            },
+        },
+    };
     return (
         <Box
             sx={{
@@ -15,15 +42,15 @@ const Testimonial = () => {
                 backgroundPosition: 'left',
                 backgroundSize: 'cover',
             }}
+            id={NAVBAR_PAGES[6].id}
         >
             <Box
                 sx={(theme) => ({
-                    // background: theme.gradient.darkAlpha,
                     py: 10,
                 })}
             >
                 <Container sx={{ alignSelf: 'center' }} id={NAVBAR_PAGES[6].id}>
-                    <Title black>{NAVBAR_PAGES[6].title}</Title>
+                    <Title black>Témoignage</Title>
                     <Stack spacing={3} mb={10}>
                         <Typography
                             sx={(theme) => ({
@@ -32,7 +59,7 @@ const Testimonial = () => {
                                 fontSize: theme.fontSize['4xl'],
                             })}
                         >
-                            Settled wishing ability musical may another set age.
+                            Voix Vivantes de l'Impact Social
                         </Typography>
                         <Typography
                             component="span"
@@ -43,18 +70,16 @@ const Testimonial = () => {
                                 lineHeight: 2,
                             })}
                         >
-                            He unaffected sympathize discovered at no am conviction principles. Girl ham very how yet hill four show. Meet
-                            lain on he only size. Branched learning so subjects mistress do appetite jennings be in.
+                            Dans ces récits, découvrez les expériences authentiques de ceux qui ont été touchés par le Social Innovation
+                            Lab. Nous sommes reconnaissants envers nos précieux partenaires et tous ceux qui ont contribué à faire de ces
+                            histoires de réussite une réalité inspirante.
                         </Typography>
                     </Stack>
-
-                    <Grid container spacing={5}>
+                    <OwlCarousel id="customer-testimonoals" className="owl-carousel owl-theme" {...options}>
                         {TESTIMONIAL.map((item) => (
-                            <Grid item md={4} sm={6}>
-                                <TestimonialCard {...item} />
-                            </Grid>
+                            <TestimonialCard {...item} />
                         ))}
-                    </Grid>
+                    </OwlCarousel>
                 </Container>
             </Box>
         </Box>

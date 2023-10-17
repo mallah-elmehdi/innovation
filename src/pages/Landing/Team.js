@@ -1,21 +1,46 @@
-import { Box, Container, IconButton, Stack, Typography } from '@mui/material';
+import { Box, Container, Stack, Typography } from '@mui/material';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 import React from 'react';
-import { BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import OwlCarousel from 'react-owl-carousel';
 import Bg from '../../assets/background/polygon-scatter-haikei-3.png';
 import { Title } from '../../components';
 import MemberCard from '../../components/MemberCard';
 import { TEAM } from '../../constants/landing';
 import { NAVBAR_PAGES } from '../../constants/navbar';
 import Testimonial from './Testimonial';
+import News from './News';
 
 const Team = () => {
+    // --- carosselle
+    const options = {
+        loop: true,
+        center: true,
+        items: 3,
+        margin: 0,
+        autoplay: true,
+        dots: true,
+        autoplayTimeout: 10000,
+        smartSpeed: 450,
+        // nav: false,
+        responsive: {
+            0: {
+                items: 2,
+            },
+            600: {
+                items: 2,
+            },
+            1000: {
+                items: 4,
+            },
+        },
+    };
+
     return (
         <Box>
             <Box
                 sx={(theme) => ({
-                    backgroundColor: theme.palette.secondary.dark,
+                    backgroundColor: theme.palette.primary.dark,
                 })}
             >
                 <Box
@@ -28,7 +53,7 @@ const Team = () => {
                     })}
                 >
                     <Container sx={{ alignSelf: 'center' }} id={NAVBAR_PAGES[5].id}>
-                        <Title white>{NAVBAR_PAGES[5].title}</Title>
+                        <Title white>notre équipe</Title>
 
                         <Stack spacing={3} mb={10}>
                             <Typography
@@ -38,7 +63,7 @@ const Team = () => {
                                     fontSize: theme.fontSize['4xl'],
                                 })}
                             >
-                                Settled wishing ability musical may another set age.
+                                Energie créative et Expertise diversifiée
                             </Typography>
                             <Typography
                                 component="span"
@@ -49,12 +74,13 @@ const Team = () => {
                                     lineHeight: 2,
                                 })}
                             >
-                                He unaffected sympathize discovered at no am conviction principles. Girl ham very how yet hill four show.
-                                Meet lain on he only size. Branched learning so subjects mistress do appetite jennings be in.
+                                Au cœur du Social Innovation Lab (SIL) se trouve une équipe diversifiée et passionnée, guidée par une quête
+                                incessante d'Impact. Rassemblant des professionnels experts et des chercheurs engagés, chaque membre de
+                                notre équipe apporte son savoir-faire unique pour façonner un avenir meilleur.
                             </Typography>
                         </Stack>
 
-                        <Carousel
+                        {/* <Carousel
                             showStatus={false}
                             autoPlay={true}
                             // infiniteLoop={true}
@@ -103,15 +129,18 @@ const Team = () => {
                                     </IconButton>
                                 );
                             }}
-                        >
+                        ></Carousel> */}
+
+                        <OwlCarousel className="owl-carousel owl-theme" {...options}>
                             {TEAM.map((item) => (
                                 <MemberCard {...item} />
                             ))}
-                        </Carousel>
+                        </OwlCarousel>
                     </Container>
                 </Box>
             </Box>
             <Testimonial />
+            <News />
         </Box>
     );
 };

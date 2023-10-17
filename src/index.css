@@ -6,3 +6,85 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
+/* Owl carossel dots */
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    margin-top: 30px;
+    background: #ea3b16;
+    width: 12px;
+    height: 12px;
+    border-radius: 0%;
+}
+.owl-carousel .owl-dots .owl-dot span {
+    border-radius: 0%;
+    width: 12px;
+    height: 12px;
+}
+
+/* slick slider */
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.25);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes zoomOut {
+    0% {
+        transform: scale(1.25);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.25);
+    }
+}
+
+.zoom-in {
+    animation: zoomIn 35s infinite;
+}
+
+.zoom-out {
+    animation: zoomOut 35s infinite;
+}
+
+
+/* slick slider fast */
+@keyframes zoomInFast {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.25);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes zoomOutFast {
+    0% {
+        transform: scale(1.25);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.25);
+    }
+}
+
+.zoom-in-fast {
+    animation: zoomInFast 5s infinite;
+}
+
+.zoom-out-fast {
+    animation: zoomOutFast 5s infinite;
+}

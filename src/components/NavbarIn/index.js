@@ -6,7 +6,7 @@ import Mobile from './Mobile';
 import { useLocation } from 'react-router-dom';
 
 const Navbar = () => {
-    const md = useMediaQuery((theme) => theme.breakpoints.up('lg'));
+    const md = useMediaQuery((theme) => theme.breakpoints.up('md'));
 
     // ---------- url hash id
     const { hash } = useLocation();

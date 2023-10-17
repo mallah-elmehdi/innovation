@@ -1,44 +1,38 @@
-import { Box, Stack, Typography } from '@mui/material';
+import { Box, CardMedia, Stack, Typography } from '@mui/material';
 import React from 'react';
-import { Card } from '..';
 
 const MemberCard = ({ image, name, title }) => {
     return (
-        <Box>
-            <Card
+        <Box
+            mx={0.25}
+            sx={(theme) => ({
+                p: 1,
+                backgroundColor: theme.palette.common.white,
+            })}
+        >
+            <Stack
+                position="relative"
+                className="item"
                 sx={(theme) => ({
-                    position: 'relative',
-                    overflow: 'visible',
-                    mb: 7,
-                    // width: 300,
-                    height: 250,
-                    width: 250,
-                    backgroundImage: `url(${image})`,
-                    backgroundRepeat: 'no-repeat',
-                    backgroundPosition: 'center',
-                    backgroundSize: 'cover',
+                    p: 1,
+                    border: '1px solid',
+                    borderColor: theme.palette.primary.secondary,
+                    backgroundColor: theme.palette.common.white,
                 })}
             >
-                {/* <Box
-                    position="absolute"
-                    width="100%"
-                    height="100%"
-                    top="50%"
-                    right="50%"
+                <Box />
+                <CardMedia
                     sx={(theme) => ({
-                        transform: 'translate(50%, -50%)',
-                        background: theme.gradient.darkAlpha,
-                        // opacity: 0.7,
+                        height: { sm: 200, xs: 200 },
+                        backgroundPosition: 'top',
+                        // backgroundSize: 'contain',
                     })}
-                /> */}
-                <Card
+                    image={image}
+                />
+                <Box
                     sx={(theme) => ({
-                        position: 'absolute',
-                        top: '100%',
-                        right: '50%',
-                        transform: 'translate(50%, -50%)',
-                        width: '80%',
-                        height: 'fit-content',
+                        backgroundColor: theme.palette.common.white,
+                        flexGrow: 1,
                         p: 1,
                     })}
                 >
@@ -64,8 +58,8 @@ const MemberCard = ({ image, name, title }) => {
                             {title}
                         </Typography>
                     </Stack>
-                </Card>
-            </Card>
+                </Box>
+            </Stack>
         </Box>
     );
 };

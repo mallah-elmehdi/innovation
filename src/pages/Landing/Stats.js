@@ -22,8 +22,11 @@ const Stats = () => {
                 })}
             >
                 <Container sx={{ alignSelf: 'center' }} id={NAVBAR_PAGES[3].id}>
-                    <Title white>{NAVBAR_PAGES[3].title}</Title>
+                    <Title white>SIL en chiffre</Title>
                     <Grid container spacing={5} alignItems="center">
+                        <Grid item md={6} xs={12}>
+                            
+                        </Grid>
                         <Grid item md={6} xs={12}>
                             <Stack spacing={3} mb={10}>
                                 <Typography
@@ -33,7 +36,7 @@ const Stats = () => {
                                         fontSize: theme.fontSize['4xl'],
                                     })}
                                 >
-                                    Settled wishing ability musical may another set age.
+                                    Notre Engagement : Des Actions Concrètes
                                 </Typography>
                                 <Typography
                                     component="span"
@@ -44,8 +47,10 @@ const Stats = () => {
                                         lineHeight: 2,
                                     })}
                                 >
-                                    He unaffected sympathize discovered at no am conviction principles. Girl ham very how yet hill four
-                                    show. Meet lain on he only size. Branched learning so subjects mistress do appetite jennings be in.
+                                    Au Social Innovation Lab (SIL), notre engagement se mesure par nos réalisations tangibles. Avec plus de
+                                    26 projets pilotes lancés, 8 projets implémentés avec succès et une collaboration fructueuse avec plus
+                                    de 32 partenaires dévoués, notre lab d'innovation sociale démontre que même en tant que nouvel acteur,
+                                    notre équipe ne connaît pas de limites.
                                 </Typography>
                             </Stack>
                         </Grid>

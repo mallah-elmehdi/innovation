@@ -71,6 +71,7 @@ const theme = createTheme({
 theme.gradient = {
     primary: `linear-gradient(90deg, ${theme.palette.primary.main} 0%, ${theme.palette.secondary.main} 100%)`,
     secondary: `linear-gradient(210deg, ${theme.palette.primary.main} 40%, ${theme.palette.secondary.main} 100%)`,
+    primaryDark: `linear-gradient(210deg, ${theme.palette.primary.dark} 40%, ${theme.palette.primary.main} 100%)`,
 
     // -----
 

@@ -14,7 +14,7 @@ const Logo = ({ square, white, lg, md }) => {
                 src={white ? ImageWhite : Image}
                 sx={(theme) => ({
                     width: '100%',
-                    height: lg ? 100 : md ? 45 : 40,
+                    height: lg ? 80 : md ? 25 : 22,
                     transition: 'all 0.5s ease',
                 })}
             />

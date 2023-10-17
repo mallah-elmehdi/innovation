@@ -18,7 +18,7 @@ const AboutUs = () => {
             }}
         >
             <Container sx={{ alignSelf: 'center' }}>
-                <Title>{NAVBAR_PAGES[1].title}</Title>
+                <Title>Notre VISION ET MISSION</Title>
                 <Grid container spacing={5} alignItems="center">
                     <Grid item md={6} xs={12}>
                         <Typography
@@ -50,9 +50,10 @@ const AboutUs = () => {
                                 lineHeight: 2,
                             })}
                         >
-                            Un espace d'innovation sociale, de recherche-action et de co-construction qui accompagne les populations, les
-                            acteurs et les organisations privées ou publiques dans la réflexion et le développement de leurs projets sociaux
-                            au niveau local, régional, national et africain.
+                            Au Social Innovation Lab (SIL), notre mission est de faciliter l'innovation sociale en collaborant avec les
+                            communautés pour résoudre les défis locaux, nationaux et internationaux, tout en favorisant le développement
+                            durable. Guidés par notre vision, nous aspirons à bâtir un avenir socialement innovant à travers des initiatives
+                            inclusives et durables, propulsant le progrès au-delà des frontières.
                         </Typography>
                     </Grid>
                     <Grid item md={6} xs={12}>

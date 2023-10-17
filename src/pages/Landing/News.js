@@ -14,7 +14,7 @@ const News = () => {
             })}
         >
             <Container sx={{ alignSelf: 'center' }} id={NAVBAR_PAGES[0].id}>
-                <Title white>{NAVBAR_PAGES[0].title}</Title>
+                <Title white>Actualités & annonces</Title>
                 <Grid container spacing={3} alignItems="stretch">
                     {NEWS.map((item, index) => (
                         <Grid item md={4} sm={6} xs={12}>
