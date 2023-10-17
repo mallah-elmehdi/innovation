@@ -1,12 +1,11 @@
 import { Box, Container, Stack, Typography } from '@mui/material';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
-import OwlCarousel from 'react-owl-carousel';
 import React from 'react';
+import OwlCarousel from 'react-owl-carousel';
 import Bg from '../../assets/background/squares.png';
 import { TestimonialCard, Title } from '../../components';
 import { TESTIMONIAL } from '../../constants/landing';
-import { NAVBAR_PAGES } from '../../constants/navbar';
 import '../../css/testimonial.css';
 
 const Testimonial = () => {
@@ -42,14 +41,13 @@ const Testimonial = () => {
                 backgroundPosition: 'left',
                 backgroundSize: 'cover',
             }}
-            id={NAVBAR_PAGES[6].id}
         >
             <Box
                 sx={(theme) => ({
                     py: 10,
                 })}
             >
-                <Container sx={{ alignSelf: 'center' }} id={NAVBAR_PAGES[6].id}>
+                <Container sx={{ alignSelf: 'center' }}>
                     <Title black>Témoignage</Title>
                     <Stack spacing={3} mb={10}>
                         <Typography

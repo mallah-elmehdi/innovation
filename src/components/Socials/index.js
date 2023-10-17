@@ -13,6 +13,7 @@ const Socials = () => {
                 transform: 'translate(0, -50%)',
                 zIndex: 100,
             }}
+            spacing={1}
         >
             {SOCIALS.map((item) => (
                 <Link to={item.link} target="_blank">

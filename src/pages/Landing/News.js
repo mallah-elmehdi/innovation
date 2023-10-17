@@ -2,7 +2,6 @@ import { Box, Container, Grid } from '@mui/material';
 import { motion } from 'framer-motion';
 import React from 'react';
 import { Link, NewsCard, Title } from '../../components';
-import { NAVBAR_PAGES } from '../../constants/navbar';
 import { NEWS } from '../../constants/news';
 
 const News = () => {
@@ -13,7 +12,7 @@ const News = () => {
                 py: 10,
             })}
         >
-            <Container sx={{ alignSelf: 'center' }} id={NAVBAR_PAGES[0].id}>
+            <Container sx={{ alignSelf: 'center' }}>
                 <Title white>Actualités & annonces</Title>
                 <Grid container spacing={3} alignItems="stretch">
                     {NEWS.map((item, index) => (

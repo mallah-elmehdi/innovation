@@ -8,7 +8,7 @@ import Bg from '../../assets/background/polygon-scatter-haikei.png';
 const AboutUs = () => {
     return (
         <Box
-            id={NAVBAR_PAGES[1].id}
+            id={NAVBAR_PAGES[0].id}
             sx={{
                 position: 'relative',
                 backgroundImage: `url(${Bg})`,

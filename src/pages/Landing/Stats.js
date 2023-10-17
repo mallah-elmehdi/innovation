@@ -21,11 +21,11 @@ const Stats = () => {
                     py: 10,
                 })}
             >
-                <Container sx={{ alignSelf: 'center' }} id={NAVBAR_PAGES[3].id}>
+                <Container sx={{ alignSelf: 'center' }} id={NAVBAR_PAGES[2].id}>
                     <Title white>SIL en chiffre</Title>
                     <Grid container spacing={5} alignItems="center">
                         <Grid item md={6} xs={12}>
-                            
+
                         </Grid>
                         <Grid item md={6} xs={12}>
                             <Stack spacing={3} mb={10}>

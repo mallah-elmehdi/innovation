@@ -7,9 +7,8 @@ import Bg from '../../assets/background/polygon-scatter-haikei-3.png';
 import { Title } from '../../components';
 import MemberCard from '../../components/MemberCard';
 import { TEAM } from '../../constants/landing';
-import { NAVBAR_PAGES } from '../../constants/navbar';
-import Testimonial from './Testimonial';
 import News from './News';
+import Testimonial from './Testimonial';
 
 const Team = () => {
     // --- carosselle
@@ -52,7 +51,7 @@ const Team = () => {
                         py: 10,
                     })}
                 >
-                    <Container sx={{ alignSelf: 'center' }} id={NAVBAR_PAGES[5].id}>
+                    <Container sx={{ alignSelf: 'center' }}>
                         <Title white>notre équipe</Title>
 
                         <Stack spacing={3} mb={10}>

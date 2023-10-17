@@ -1,9 +1,5 @@
 export const NAVBAR_PAGES = [
     {
-        title: 'Actualités & annonces',
-        id: 'actualites-et-annonces',
-    },
-    {
         title: 'Vision et Mission',
         id: 'vision-et-Mission',
     },
@@ -18,13 +14,5 @@ export const NAVBAR_PAGES = [
     {
         title: 'Méthodologie',
         id: 'notre-methodologie',
-    },
-    {
-        title: 'Équipe',
-        id: 'equipe',
-    },
-    {
-        title: 'Témoignage',
-        id: 'temoignage',
     },
 ];

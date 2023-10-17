@@ -1,21 +1,12 @@
-import { Avatar, Box, Container, Divider, Fade, Grid, Stack, Typography } from '@mui/material';
-import { motion } from 'framer-motion';
-import React, { useState } from 'react';
-import { Card, Title } from '../../components';
+import { Avatar, Container, Grid, Stack, Typography } from '@mui/material';
+import React from 'react';
+import { Title } from '../../components';
 import { METODOLOGIE } from '../../constants/landing';
 import { NAVBAR_PAGES } from '../../constants/navbar';
 
 const Metodologie = () => {
-    // ---------- choose
-    const [methodOld, setMethodOld] = useState(0);
-    const [method, setMethod] = useState(0);
-    const handleMethod = (index) => setMethod(index);
-    const handleMethodOld = (index) => setMethodOld(index);
-
-    // ----------
-
     return (
-        <Container sx={{ alignSelf: 'center' }} id={NAVBAR_PAGES[4].id}>
+        <Container sx={{ alignSelf: 'center' }} id={NAVBAR_PAGES[3].id}>
             <Title>Notre Méthodologie</Title>
             <Typography
                 sx={(theme) => ({
