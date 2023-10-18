@@ -48,6 +48,7 @@ const AboutUs = () => {
                                 fontSize: theme.fontSize.lg,
                                 color: theme.palette.common.black,
                                 lineHeight: 2,
+                                textAlign: 'justify',
                             })}
                         >
                             Au Social Innovation Lab (SIL), notre mission est de faciliter l'innovation sociale en collaborant avec les

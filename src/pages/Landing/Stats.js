@@ -24,11 +24,8 @@ const Stats = () => {
                 <Container sx={{ alignSelf: 'center' }} id={NAVBAR_PAGES[2].id}>
                     <Title white>SIL en chiffre</Title>
                     <Grid container spacing={5} alignItems="center">
-                        <Grid item md={6} xs={12}>
-
-                        </Grid>
-                        <Grid item md={6} xs={12}>
-                            <Stack spacing={3} mb={10}>
+                        <Grid item xs={12}>
+                            <Stack spacing={3} mb={5}>
                                 <Typography
                                     sx={(theme) => ({
                                         fontWeight: theme.fontWeight.bold,
@@ -45,6 +42,7 @@ const Stats = () => {
                                         color: theme.palette.common.white,
                                         fontSize: theme.fontSize.lg,
                                         lineHeight: 2,
+                                        textAlign: 'justify',
                                     })}
                                 >
                                     Au Social Innovation Lab (SIL), notre engagement se mesure par nos réalisations tangibles. Avec plus de

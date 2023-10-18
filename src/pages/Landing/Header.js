@@ -126,9 +126,9 @@ const Header = () => {
                     <Typography
                         sx={(theme) => ({
                             fontWeight: theme.fontWeight.bold,
-                            fontSize: { md: theme.fontSize['5xl'], xs: theme.fontSize['4xl'] },
+                            fontSize: { md: theme.fontSize['4xl'], xs: theme.fontSize['3xl'] },
                             color: theme.palette.common.white,
-                            // textAlign: 'center',
+                            textAlign: 'justify',
                             lineHeight: 1.2,
                             mb: 3,
                         })}
@@ -137,10 +137,9 @@ const Header = () => {
                     </Typography>
                     <Typography
                         sx={(theme) => ({
-                            fontSize: { md: theme.fontSize['lg'], xs: theme.fontSize['md'] },
+                            fontSize: { md: theme.fontSize['md'], xs: theme.fontSize['sm'] },
                             color: theme.palette.common.white,
-                            // textAlign: 'justify',
-                            // textAlignLast: 'center',
+                            textAlign: 'justify',
                             fontWeight: theme.fontWeight.light,
                         })}
                     >

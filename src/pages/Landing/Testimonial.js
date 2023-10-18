@@ -66,6 +66,7 @@ const Testimonial = () => {
                                 color: theme.palette.common.black,
                                 fontSize: theme.fontSize.lg,
                                 lineHeight: 2,
+                                textAlign: 'justify',
                             })}
                         >
                             Dans ces récits, découvrez les expériences authentiques de ceux qui ont été touchés par le Social Innovation

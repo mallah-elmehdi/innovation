@@ -71,6 +71,7 @@ const Team = () => {
                                     color: theme.palette.common.white,
                                     fontSize: theme.fontSize.lg,
                                     lineHeight: 2,
+                                    textAlign: 'justify',
                                 })}
                             >
                                 Au cœur du Social Innovation Lab (SIL) se trouve une équipe diversifiée et passionnée, guidée par une quête

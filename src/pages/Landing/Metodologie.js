@@ -14,6 +14,7 @@ const Metodologie = () => {
                     color: theme.palette.common.black,
                     fontWeight: theme.fontWeight.light,
                     lineHeight: 2,
+                    textAlign: 'justify',
                     mb: 5,
                 })}
             >
