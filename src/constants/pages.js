@@ -1,10 +1,10 @@
 export const PAGES = {
     landing: {
-        title: 'AGRILYCOOP | Bienvenu',
+        title: 'SIL | Bienvenu',
         url: '/',
     },
     notFound: {
-        title: 'AGRILYCOOP | Oops!',
+        title: 'SIL | Oops!',
         url: '*',
     },
 };
