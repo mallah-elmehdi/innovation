@@ -82,58 +82,6 @@ const Team = () => {
                                 notre équipe apporte son savoir-faire unique pour façonner un avenir meilleur.
                             </Typography>
                         </Stack>
-
-                        {/* <Carousel
-                            showStatus={false}
-                            autoPlay={true}
-                            // infiniteLoop={true}
-                            interval={3000}
-                            centerMode
-                            centerSlidePercentage={25}
-                            renderArrowPrev={(clickHandler, hasPrev) => {
-                                return (
-                                    <IconButton
-                                        disabled={!hasPrev}
-                                        sx={(theme) => ({
-                                            height: '100%',
-                                            background: theme.gradient.darkAlpha,
-                                            position: 'absolute',
-                                            top: '50%',
-                                            zIndex: 10,
-                                            left: 0,
-                                            transform: 'translateY(-50%)',
-                                            borderRadius: 0,
-                                            color: theme.palette.common.white,
-                                        })}
-                                        onClick={clickHandler}
-                                    >
-                                        <BsArrowLeftShort />
-                                    </IconButton>
-                                );
-                            }}
-                            renderArrowNext={(clickHandler, hasNext) => {
-                                return (
-                                    <IconButton
-                                        disabled={!hasNext}
-                                        sx={(theme) => ({
-                                            height: '100%',
-                                            background: theme.gradient.darkAlpha,
-                                            position: 'absolute',
-                                            top: '50%',
-                                            zIndex: 10,
-                                            right: 0,
-                                            transform: 'translateY(-50%)',
-                                            borderRadius: 0,
-                                            color: theme.palette.common.white,
-                                        })}
-                                        onClick={clickHandler}
-                                    >
-                                        <BsArrowRightShort />
-                                    </IconButton>
-                                );
-                            }}
-                        ></Carousel> */}
-
                         <OwlCarousel className="owl-carousel owl-theme" {...options}>
                             {TEAM.map((item) => (
                                 <MemberCard {...item} />

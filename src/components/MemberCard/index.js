@@ -22,7 +22,7 @@ const MemberCard = ({ image, name, title }) => {
             >
                 <CardMedia
                     sx={(theme) => ({
-                        height: { md: 200, sm: 320, xs: 350 },
+                        height: { md: 250, sm: 320, xs: 350 },
                         backgroundPosition: 'top',
                     })}
                     image={image}

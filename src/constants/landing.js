@@ -33,6 +33,7 @@ import Member14 from '../assets/landing/team/14.jpeg';
 import Member15 from '../assets/landing/team/15.jpeg';
 import Member16 from '../assets/landing/team/16.jpeg';
 import Member17 from '../assets/landing/team/17.jpeg';
+import Member18 from '../assets/landing/team/18.jpeg';
 // ---
 import Partenaire01 from '../assets/landing/partenaire/1.jpg';
 import Partenaire02 from '../assets/landing/partenaire/2.jpg';
@@ -152,6 +153,7 @@ export const TEAM = [
     { image: Member15, name: 'Sarra SABER', title: 'Social Entrepreneurship Engineer' },
     { image: Member16, name: 'Zakaria BELATTAR', title: 'Graphic Designer' },
     { image: Member17, name: 'Eric KADIO', title: 'Researcher' },
+    { image: Member18, name: 'Soumia KASSOU', title: 'Chargé Administratif' },
 ];
 
 export const PARTENAIRES = [
