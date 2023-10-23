@@ -61,8 +61,8 @@ const Mobile = ({ sticky, hash }) => {
                                 <Stack spacing={0.5} width="fit-content">
                                     <ButtonLink
                                         sx={(theme) => ({
-                                            color: sticky ? theme.palette.primary.main : theme.palette.common.white,
-                                            fontSize: theme.fontSize.lg,
+                                            color: theme.palette.primary.main,
+                                            fontSize: theme.fontSize['3xl'],
                                         })}
                                     >
                                         {page.title}

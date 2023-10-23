@@ -20,12 +20,10 @@ const MemberCard = ({ image, name, title }) => {
                     backgroundColor: theme.palette.common.white,
                 })}
             >
-                <Box />
                 <CardMedia
                     sx={(theme) => ({
-                        height: { sm: 200, xs: 200 },
+                        height: { md: 200, sm: 320, xs: 350 },
                         backgroundPosition: 'top',
-                        // backgroundSize: 'contain',
                     })}
                     image={image}
                 />

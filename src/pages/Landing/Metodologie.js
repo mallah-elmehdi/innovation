@@ -24,7 +24,7 @@ const Metodologie = () => {
             </Typography>
             <Grid container spacing={3}>
                 {METODOLOGIE.map((item, index) => (
-                    <Grid item md={3} sm={6} xs={12}>
+                    <Grid item md={3} xs={6}>
                         <Stack spacing={3} alignItems="center">
                             <Avatar
                                 variant="square"
@@ -43,6 +43,7 @@ const Metodologie = () => {
                                     color: theme.palette.common.black,
                                     fontWeight: theme.fontWeight.light,
                                     lineHeight: 1,
+                                    textAlign: 'center',
                                 })}
                             >
                                 {item.title}

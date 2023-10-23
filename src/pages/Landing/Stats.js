@@ -11,7 +11,7 @@ const Stats = () => {
             sx={(theme) => ({
                 backgroundImage: `url(${Bg})`,
                 backgroundRepeat: 'no-repeat',
-                backgroundPosition: 'top',
+                backgroundPosition: { md: 'top', xs: 'top left -850px' },
                 backgroundSize: 'cover',
             })}
         >

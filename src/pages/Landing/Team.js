@@ -1,4 +1,4 @@
-import { Box, Container, Stack, Typography } from '@mui/material';
+import { Box, Container, Stack, Typography, useMediaQuery } from '@mui/material';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import React from 'react';
@@ -11,6 +11,9 @@ import News from './News';
 import Testimonial from './Testimonial';
 
 const Team = () => {
+    // --- MEDIA QUERI
+    const xs = useMediaQuery((theme) => theme.breakpoints.down('sm'));
+
     // --- carosselle
     const options = {
         loop: true,
@@ -18,13 +21,13 @@ const Team = () => {
         items: 3,
         margin: 0,
         autoplay: true,
-        dots: true,
+        dots: xs ? false : true,
         autoplayTimeout: 10000,
         smartSpeed: 450,
         // nav: false,
         responsive: {
             0: {
-                items: 2,
+                items: 1,
             },
             600: {
                 items: 2,
