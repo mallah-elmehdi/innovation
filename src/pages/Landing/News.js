@@ -8,12 +8,12 @@ const News = () => {
     return (
         <Box
             sx={(theme) => ({
-                background: theme.palette.primary.dark,
+                // background: theme.palette.primary.dark,
                 py: 10,
             })}
         >
             <Container sx={{ alignSelf: 'center' }}>
-                <Title white>Actualités & annonces</Title>
+                <Title>Actualités & annonces</Title>
                 <Grid container spacing={3} alignItems="stretch">
                     {NEWS.map((item, index) => (
                         <Grid item md={4} sm={6} xs={12}>

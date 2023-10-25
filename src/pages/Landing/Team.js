@@ -90,7 +90,7 @@ const Team = () => {
                     </Container>
                 </Box>
             </Box>
-            <Testimonial />
+            {/* <Testimonial /> */}
             <News />
         </Box>
     );
