@@ -8,7 +8,6 @@ import { Title } from '../../components';
 import MemberCard from '../../components/MemberCard';
 import { TEAM } from '../../constants/landing';
 import News from './News';
-import Testimonial from './Testimonial';
 
 const Team = () => {
     // --- MEDIA QUERI

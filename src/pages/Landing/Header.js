@@ -143,9 +143,9 @@ const Header = () => {
                             fontWeight: theme.fontWeight.light,
                         })}
                     >
-                        Créé par la Fondation OCP en avril 2020, SIL est une plateforme d'innovation sociale, de recherche-action et de
-                        coconstruction. Nous accompagnons les populations, acteurs privés et publics dans le développement de projets
-                        sociaux locaux, régionaux, nationaux et africains.
+                        SIL est une plateforme d'innovation sociale, de recherche-action et de coconstruction. Nous accompagnons les
+                        populations, acteurs privés et publics dans le développement de projets sociaux locaux, régionaux, nationaux et
+                        africains.
                     </Typography>
                 </Container>
             </Box>
