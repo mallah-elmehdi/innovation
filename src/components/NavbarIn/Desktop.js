@@ -9,7 +9,7 @@ import { PAGES } from '../../constants/pages';
 const Desktop = ({ sticky, hash }) => {
     return (
         <>
-            <Logo md={!sticky} white={!sticky} square />
+            <Logo md={!sticky} white={!sticky} square  />
             <Box sx={{ display: 'flex', gap: 3, ml: 'auto' }}>
                 {NAVBAR_PAGES.map((page, index) => (
                     <Link to={PAGES.landing.url + '#' + page.id}>

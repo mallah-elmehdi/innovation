@@ -67,6 +67,9 @@ import Partenaire27 from '../assets/landing/partenaire/27.jpg';
 import Partenaire28 from '../assets/landing/partenaire/28.jpg';
 import Partenaire29 from '../assets/landing/partenaire/29.jpg';
 import Partenaire30 from '../assets/landing/partenaire/30.jpg';
+import Partenaire31 from '../assets/landing/partenaire/31.jpg';
+import Partenaire32 from '../assets/landing/partenaire/32.jpg';
+import Partenaire33 from '../assets/landing/partenaire/33.png';
 
 export const ACTIVITIES = [
     {
@@ -160,7 +163,6 @@ export const TEAM = [
     { image: Member19, name: 'Salma EL MANOUAR', title: 'Program Coordinator Officer' },
     { image: Member20, name: 'Salma BENJBARA', title: 'BP Communication and Marketing' },
     { image: Member21, name: 'Nourdine HARMOUCH', title: 'Project Management Officer' },
-    
 ];
 
 export const PARTENAIRES = [
@@ -193,6 +195,9 @@ export const PARTENAIRES = [
     Partenaire28,
     Partenaire29,
     Partenaire30,
+    Partenaire31,
+    Partenaire32,
+    Partenaire33,
 ];
 
 export const TESTIMONIAL = [
