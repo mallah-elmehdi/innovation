@@ -33,6 +33,7 @@ const Landing = () => {
             }, 0);
         }
     }, [hash]);
+
     return (
         <>
             <Stack spacing={10}>

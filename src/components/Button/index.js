@@ -8,7 +8,7 @@ const Base = styled(Button)(({ theme }) => ({
     fontWeight: theme.fontWeight.bold,
     fontSize: theme.fontSize.md,
     textDecoration: 'none',
-    borderRadius: theme.borderRadius['2xl'],
+    borderRadius: 0,
     padding: theme.spacing(1.5, 5),
     boxShadow: 'none',
 }));

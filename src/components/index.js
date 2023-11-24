@@ -11,6 +11,7 @@ export { default as Footer } from './Footer';
 export { default as IconCardLight } from './IconCardLight';
 export { default as NavbarIn } from './NavbarIn';
 export { default as Socials } from './Socials';
+export { default as BlogCard } from './BlogCard';
 
 // -----
 export { default as ActivityCard } from './ActivityCard';
