@@ -12,6 +12,7 @@ export { default as IconCardLight } from './IconCardLight';
 export { default as NavbarIn } from './NavbarIn';
 export { default as Socials } from './Socials';
 export { default as BlogCard } from './BlogCard';
+export { default as VideoPlayer } from './VideoPlayer';
 
 // -----
 export { default as ActivityCard } from './ActivityCard';

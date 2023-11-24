@@ -47,7 +47,7 @@ const News = () => {
                             const time_a = new Date(a?.publishedAt);
                             const time_b = new Date(b?.publishedAt);
 
-                            if (time_a.getMilliseconds() > time_b.getMilliseconds()) {
+                            if (time_a > time_b) {
                                 return -1;
                             }
                             return 1;

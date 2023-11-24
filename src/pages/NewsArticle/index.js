@@ -3,9 +3,11 @@ import { Avatar, Box, Container, Stack, Typography } from '@mui/material';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { sanityClient } from '../../api/sanity';
-import { ButtonLink, Footer, Img, Navbar } from '../../components';
+import { Footer, Img, Navbar } from '../../components';
 import { Category } from '../../components/BlogCard';
 import { dateFormattingTxtFull } from '../../utils/functions';
+import Block from './Block';
+import Image from './Image';
 
 const NewsArticle = () => {
     // ========== CHANGE PAGE INFO
@@ -13,8 +15,6 @@ const NewsArticle = () => {
 
     // -------------
     const [blog, setBlog] = useState([]);
-    const [images, setImages] = useState([]);
-    const [alt, setAlt] = useState([]);
 
     // -------------
     useEffect(() => {
@@ -49,53 +49,54 @@ const NewsArticle = () => {
                 console.log('->>>>>', data);
 
                 if (data[0]) {
-                    setBlog(() => {
-                        var index = 0;
-                        return {
-                            ...data[0],
-                            body: data[0].body.map((item) => {
-                                if (item._type === 'image') {
-                                    return {
-                                        ...item,
-                                        index: index++,
-                                    };
-                                }
-                                return item;
-                            }),
-                        };
-                    });
-                    setImages(await handleFetchImage(handleExtractImage(data[0].body)));
-                    setAlt(handleExtractAlts(data[0].body));
+                    setBlog(data[0]);
+                    // setBlog(() => {
+                    //     // var index = 0;
+                    //     return {
+                    //         ...data[0],
+                    //         // body: data[0].body.map((item) => {
+                    //         //     if (item._type === 'image') {
+                    //         //         return {
+                    //         //             ...item,
+                    //         //             index: index++,
+                    //         //         };
+                    //         //     }
+                    //         //     return item;
+                    //         // }),
+                    //     };
+                    // });
+                    // setImages(await handleFetchImage(handleExtractImage(data[0].body)));
+                    // setAlt(handleExtractAlts(data[0].body));
                 }
             })
             .catch(console.error);
     }, [slug]);
 
-    const handleExtractImage = (blocks) => {
-        const imageReferences = [];
-        blocks.forEach((block) => {
-            if (block._type === 'image' && block.asset) {
-                imageReferences.push(block.asset._ref);
-            }
-        });
-        return imageReferences;
-    };
+    // const handleExtractImage = (blocks) => {
+    //     const imageReferences = [];
+    //     blocks.forEach((block) => {
+    //         if (block._type === 'image' && block.asset) {
+    //             imageReferences.push(block.asset._ref);
+    //         }
+    //     });
+    //     return imageReferences;
+    // };
 
-    const handleFetchImage = async (references) => {
-        const images = await sanityClient.fetch(`*[_id in ${JSON.stringify(references)}]{_id, url}`);
-        return images.map((image) => image.url).reverse();
-    };
+    // const handleFetchImage = async (references) => {
+    //     const images = await sanityClient.fetch(`*[_id in ${JSON.stringify(references)}]{_id, url}`);
+    //     return images.map((image) => image.url).reverse();
+    // };
 
-    // --------------- alt
-    const handleExtractAlts = (blocks) => {
-        const alts = [];
-        blocks.forEach((block) => {
-            if (block.children && block.children[0] && block.children[0].text && block.children[0].text.split(':')[0].trim() === '[ALT]') {
-                alts.push(block.children[0].text.split(':')[1].trim());
-            }
-        });
-        return alts;
-    };
+    // // --------------- alt
+    // const handleExtractAlts = (blocks) => {
+    //     const alts = [];
+    //     blocks.forEach((block) => {
+    //         if (block.children && block.children[0] && block.children[0].text && block.children[0].text.split(':')[0].trim() === '[ALT]') {
+    //             alts.push(block.children[0].text.split(':')[1].trim());
+    //         }
+    //     });
+    //     return alts;
+    // };
 
     return (
         <Stack spacing={5}>
@@ -172,6 +173,19 @@ const NewsArticle = () => {
                     {blog?.body && (
                         <Stack spacing={2} mt={5}>
                             {blog.body.map((item) => {
+                                if (item._type === 'block') {
+                                    return <>{Block(item)}</>;
+                                } else if (item._type === 'image') {
+                                    return <Image item={item} />;
+                                } else {
+                                    return null;
+                                }
+                            })}
+                        </Stack>
+                    )}
+                    {/* {blog?.body && (
+                        <Stack spacing={2} mt={5}>
+                            {blog.body.map((item) => {
                                 if (item.listItem && item.listItem === 'bullet') {
                                     return (
                                         <>
@@ -194,8 +208,14 @@ const NewsArticle = () => {
                                             ))}
                                         </>
                                     );
-                                }
-                                if (
+                                } else if (
+                                    item.children &&
+                                    item.children[0] &&
+                                    item.children[0].text &&
+                                    item.children[0].text.split(':')[0].trim() === '[VIDEO]'
+                                ) {
+                                    return <VideoPlayer videoId={item.children[0].text.split(':')[1].trim()} />;
+                                } else if (
                                     item._type !== 'image' &&
                                     item.children &&
                                     item.children[0] &&
@@ -237,8 +257,7 @@ const NewsArticle = () => {
                                             )}
                                         </>
                                     );
-                                }
-                                if (item._type === 'image') {
+                                } else if (item._type === 'image') {
                                     return (
                                         <Img src={images[item.index]} alt={alt.length >= item.index + 1 ? alt[item.index] : blog?.title} />
                                     );
@@ -247,7 +266,7 @@ const NewsArticle = () => {
                                 return '';
                             })}
                         </Stack>
-                    )}
+                    )} */}
                 </Stack>
             </Container>
             <Footer />
