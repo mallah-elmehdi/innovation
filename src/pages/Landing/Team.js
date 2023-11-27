@@ -7,7 +7,6 @@ import Bg from '../../assets/background/polygon-scatter-haikei-3.png';
 import { Title } from '../../components';
 import MemberCard from '../../components/MemberCard';
 import { TEAM } from '../../constants/landing';
-import News from './News';
 
 const Team = () => {
     // --- MEDIA QUERI
@@ -90,7 +89,7 @@ const Team = () => {
                 </Box>
             </Box>
             {/* <Testimonial /> */}
-            <News />
+            {/* <News /> */}
         </Box>
     );
 };
