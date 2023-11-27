@@ -138,7 +138,7 @@ const NewsArticle = () => {
                                                     SOCIAL INNOVATION LAB
                                                 </Typography>
                                             </Typography>
-                                            <Typography
+                                            {/* <Typography
                                                 component="i"
                                                 sx={(theme) => ({
                                                     textTransform: 'uppercase',
@@ -148,7 +148,7 @@ const NewsArticle = () => {
                                                 })}
                                             >
                                                 {dateFormattingTxtFull(new Date(2022, 5, 10))}
-                                            </Typography>
+                                            </Typography> */}
                                         </Stack>
                                     </Box>
                                 </Stack>
