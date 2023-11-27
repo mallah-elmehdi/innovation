@@ -15,8 +15,7 @@ export default createBrowserRouter([
             },
             {
                 path: PAGES.news.url,
-                // element: <News />,
-                element: <Navigate to={PAGES.landing.url} />,
+                element: <News />,
             },
             {
                 path: PAGES.news.url + '/:slug',
