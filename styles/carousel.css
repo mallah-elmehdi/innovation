@@ -1,0 +1,32 @@
+/* slick slider */
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.25);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes zoomOut {
+    0% {
+        transform: scale(1.25);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.25);
+    }
+}
+
+.zoom-in {
+    animation: zoomIn 35s infinite;
+}
+
+.zoom-out {
+    animation: zoomOut 35s infinite;
+}
