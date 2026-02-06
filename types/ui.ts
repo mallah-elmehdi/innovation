@@ -21,3 +21,7 @@ export type MethodologyCardType = BaseType & { title: string };
 export type TeamCardType = { title: string; image: string; name: string };
 export type ContactCardType = BaseType & { title: string };
 export type IconButtonType = ChildrenType & Partial<PropsButtonType>;
+export type MenuButtonType = ChildrenType & {
+    position?: 'left' | 'right' | 'center';
+    button: ReactNode;
+};

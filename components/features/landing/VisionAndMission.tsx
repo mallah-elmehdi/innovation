@@ -1,11 +1,11 @@
 import Section from '@/components/layout/Section';
 import P from '@/components/ui/typography/P';
-import { NAVBAR } from '@/constants/navbar';
+import { NAVBAR_SECTIONS } from '@/constants/navbar';
 import Image from 'next/image';
 
 export default function VisionAndMission() {
     return (
-        <Section title="OUR VISION AND MISSION" id={NAVBAR[0].id}>
+        <Section title="OUR VISION AND MISSION" id={NAVBAR_SECTIONS.visionAndMission}>
             <div className="grid lg:grid-cols-2 items-center gap-10 grid-cols-1">
                 <div className="flex flex-col gap-10">
                     <Image src="/brand/logo.webp" width={300} height={30} alt="this is the innovation logo" />

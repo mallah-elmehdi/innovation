@@ -23,7 +23,7 @@ export default function CarouselHeader() {
             autoplay={{
                 delay: 3000,
             }}
-            className="h-160"
+            className="h-160 z-0"
         >
             {slides.map((img, index) => (
                 <SwiperSlide key={img}>

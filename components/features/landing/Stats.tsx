@@ -5,6 +5,7 @@ import { STATS } from '@/constants/stats';
 import StatsBG from '@/public/landing/stats.webp';
 import classNames from 'classnames';
 import StatNumber from './StatNumber';
+import { NAVBAR_SECTIONS } from '@/constants/navbar';
 
 export default function Stats() {
     return (
@@ -21,6 +22,7 @@ export default function Stats() {
                 'before:top-0 before:left-0',
                 'before:w-full before:h-full before:z-0'
             )}
+            id={NAVBAR_SECTIONS.innovationInNumbers}
         >
             <div className="z-10">
                 <H1 className="text-white mb-4">Ecosystem growth and knowledge sharing.</H1>
